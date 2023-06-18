@@ -33,10 +33,10 @@ const Home = () => {
           <div className="column col-home-l">
             {activeState === "Sales Insights" && (
               <div className="Show data">
-                <h2 className="heading-footer ">
+                <div className="heading-footer ">
                   {/* <img className="footer-logo" src={logo} alt="" /> */}
                   <h2 className="Center">{activeState}</h2>
-                </h2>
+                </div>
                 <p>
                   Explore our website's sales analysis with <br /> charts and
                   graphs to uncover insights on <br /> sales, cost to company,
@@ -47,10 +47,10 @@ const Home = () => {
 
             {activeState === "Popularity & Margin" && (
               <div className="Show data">
-                <h2 className="heading-footer ">
+                <div className="heading-footer ">
                   {/* <img className="footer-logo" src={logo} alt="" /> */}
                   <h2 className="Center">{activeState}</h2>
-                </h2>
+                </div>
                 <p>
                   Visualizing Popularity and Margin of Our <br />{" "}
                   Products/Brands Over the Years! Explore Our <br /> Graphical
@@ -61,10 +61,10 @@ const Home = () => {
 
             {activeState === "Sales Distribution" && (
               <div className="Show data">
-                <h2 className="heading-footer ">
+                <div className="heading-footer ">
                   {/* <img className="footer-logo" src={logo} alt="" /> */}
                   <h2 className="Center">{activeState}</h2>
-                </h2>
+                </div>
                 <p>
                   Detailed view of distribution based on <br /> popularity,
                   sales, and margin with our <br /> informative and visually
@@ -99,10 +99,10 @@ const Home = () => {
           <div className="column col-home-r">
             {activeState2 === "Maps Taxonomic" && (
               <div className="Show data">
-                <h2 className="heading-footer ">
+                <div className="heading-footer ">
                   {/* <img className="footer-logo" src={logo} alt="" /> */}
                   <h2 className="Center">{activeState2}</h2>
-                </h2>
+                </div>
                 <p>
                   a graphical representation of the relationships <br /> between
                   Brands, Products, Design, Size, and Color, <br /> showing how
@@ -114,10 +114,10 @@ const Home = () => {
 
             {activeState2 === "Data Taxonomic" && (
               <div className="Show data">
-                <h2 className="heading-footer ">
+                <div className="heading-footer ">
                   {/* <img className="footer-logo" src={logo} alt="" /> */}
                   <h2 className="Center">{activeState2}</h2>
-                </h2>
+                </div>
                 <p>
                   Includes the different brands available, <br /> the various
                   products offered under each brand, <br /> the design options
