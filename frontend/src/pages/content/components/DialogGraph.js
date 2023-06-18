@@ -1,21 +1,14 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
 import Graph from "../Graph";
 import Slide from "@mui/material/Slide";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import LiveSearch from "./LiveSearch";
-import CloseIcon from "@mui/icons-material/Close";
-import { motion } from "framer-motion";
+import { AiOutlineClose } from "react-icons/ai";
 
-// import CloseIcon from '@mui/icons-material/Close';
+
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -58,7 +51,7 @@ export default function DialogGraph(props) {
             aria-label="close"
             fontSize="large"
           >
-            <CloseIcon />
+            <AiOutlineClose />
           </IconButton>
           <Typography
             sx={{ ml: 2, flex: 1, textAlign: "center" }}

@@ -1,6 +1,5 @@
 import React from "react";
 import "../Content.css";
-import UserCards1 from "./UserCards1";
 import UserCards2 from "./UserCards2";
 import { GrLinkedinOption } from "react-icons/gr";
 import { GrGithub } from "react-icons/gr";

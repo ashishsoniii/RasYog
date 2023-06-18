@@ -3,22 +3,16 @@ import React from "react";
 function Cards({ cardsData }) {
   return (
     <section className="Cards cards-middle">
-        {cardsData.map((card, index) => (
-      <div className="bg-white p-10 rounded-lg shadow-xl">
-          <div key={index} className="card flex flex-col items-center p-5 w-full max-w-md">
-            <div className="image-container w-32 h-32 mb-5 overflow-hidden rounded-full border border-gray-100 shadow-sm">
-              <img
-                className="w-full h-full object-cover"
-                src={card.imageSrc}
-                alt={card.content}
-              />
+      {cardsData.map((card, index) => (
+        <div className="">
+          <div key={index} className="card   ">
+            <div className="image-container ">
+              <img className="" src={card.imageSrc} alt={card.content} />
             </div>
             <img src="" alt="" />
             <h1 className="text-xl font-bold">{card.content}</h1>
-            <h2 className="tracking-wide">
-              {card.post}
-            </h2>
-            <ul className="cards__list flex">
+            <h2 className="tracking-wide">{card.post}</h2>
+            <ul className="cards__list ">
               {card.link1.icon && (
                 <li>
                   <i className="fab fa-linkedin-in">
@@ -48,8 +42,8 @@ function Cards({ cardsData }) {
               )}
             </ul>
           </div>
-      </div>
-        ))}
+        </div>
+      ))}
     </section>
   );
 }

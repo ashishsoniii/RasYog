@@ -9,7 +9,7 @@ import img6 from "../../../assets/card-img/106_sunburst.png";
 import img7 from "../../../assets/card-img/105_maps_t.png";
 import img8 from "../../../assets/card-img/102_payments.png";
 import DialogGraph from "./DialogGraph";
-import { useEffect } from "react";
+
 import "../Content.css"
 const Baz = (props) => {
   const [diagOpen, setDiagOpen] = useState(false);

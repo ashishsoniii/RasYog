@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import "./Content.css";
 // import Project from "./Project";
 import Buttonz from "./components/Button.js";
-import Button_2 from "./components/Button_2.js";
+import Button2 from "./components/Button_2.js";
 import ReactSlider from "./components/ReactSlider.js";
-import Team from "./components/Team";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
@@ -84,12 +83,6 @@ const Home = () => {
       {/*  */}
       {/*  */}
 
-      {/*
-       */}
-      {/*  */}
-      {/* new section  */}
-      {/*  */}
-
       <div
         className="main-home-text white-area tax-data"
         style={{ marginBottom: 0 }}
@@ -100,7 +93,7 @@ const Home = () => {
       <div className="section2">
         <div className="row white-area">
           <div className="column col-home-l">
-            <Button_2 setActiveState={setActiveState2} />
+            <Button2 setActiveState={setActiveState2} />
           </div>
 
           <div className="column col-home-r">
@@ -146,25 +139,23 @@ const Home = () => {
       </div>
 
       <ReactSlider />
-
-      <section className="team bg-add">
-        <div className="main-text-team">Update Data </div>
-        <NavLink to="/upload">
-          <div className="main-text-team btn-team">Upload Files!</div>
-        </NavLink>
-      </section>
-
-
-      <section className="team">
-        <div className="main-text-team">Your Partner in Business Analysis </div>
-        <NavLink to="/team">
-          <div className="main-text-team btn-team">Discover Our Team!</div>
-        </NavLink>
-
-        {/* <Cards /> */}
-
-        {/* <Cards /> */}
-      </section>
+      <div className="team-upload">
+        <section className="team bg-add">
+          <div className="main-text-team">Update Data </div>
+          <NavLink to="/upload">
+            <div className="main-text-team btn-team">Upload Files!</div>
+          </NavLink>
+        </section>
+        <hr />
+        <section className="team">
+          <div className="main-text-team">
+            Your Partner in Business Analysis{" "}
+          </div>
+          <NavLink to="/team">
+            <div className="main-text-team btn-team">Discover Our Team!</div>
+          </NavLink>
+        </section>
+      </div>
     </>
   );
 };

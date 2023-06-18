@@ -1,22 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
 
 .project-main {
     position: relative;
-    /* background-color: aqua; */
-    /* border-radius: 2rem; */
     padding-left: 12rem;
     padding-right: 12rem;
     padding-top: 4rem;
     padding-bottom: 5rem;
     min-height: 48em;
-    /* background-image: linear-gradient(45deg, #b3a1e7, #99f5e9); 	 */
-
-
 
 }
 
@@ -24,12 +17,9 @@
     position: absolute;
     height: 60rem;
     margin-top: 2rem;
-    /* top: 50rem; */
     right: 0;
     left: 0;
-    /* bottom: 0; */
     background-image: linear-gradient(45deg, #b3a1e7, #99f5e9);
-    /* transform: skewY(-5deg); */
 }
 
 .heading {
@@ -41,15 +31,8 @@
 }
 
 .search-bar {
-    /* display: flex; */
-    /* margin: ; */
-    /* display: flex; */
-    /* justify-content: center; */
-
     padding-left: 5em;
     padding-right: 5em;
-
-
 }
 
 
@@ -63,12 +46,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: -10%; */
     min-width: 20%;
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
 .select-menu {
     font-family: 'Poppins', sans-serif;
@@ -88,7 +69,12 @@
     align-items: center;
     cursor: pointer;
     justify-content: space-between;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 0px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+.select-btn:hover {
+    background: #dfdfdf;
 }
 
 .select-btn i {
@@ -96,9 +82,6 @@
     transition: 0.3s;
 }
 
-.select-menu.active .select-btn i {
-    transform: rotate(-180deg);
-}
 
 .select-menu .options {
     position: absolute;
@@ -106,7 +89,7 @@
     margin-top: 10px;
     border-radius: 8px;
     background: #fff;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px rgba(255, 0, 0, 0.1);
     display: none;
     min-width: 50px;
     z-index: 99 !important;
@@ -145,6 +128,11 @@
 
 
 /* Analysis css */
+/* Analysis css */
+/* Analysis css */
+/* Analysis css */
+/* Analysis css */
+
 
 .main-home-text {
     display: flex;
@@ -165,7 +153,8 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 1.5%;
-    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
 
 
 }
@@ -178,7 +167,13 @@
 
 
 
-/* Graph section  */
+/* Graph section  - Inner components*/
+/* Graph section  - Inner components*/
+/* Graph section  - Inner components*/
+/* Graph section  - Inner components*/
+/* Graph section  - Inner components*/
+/* Graph section  - Inner components*/
+
 
 
 .no-graph {
@@ -191,13 +186,7 @@
 }
 
 .graph-section {
-    /* display: flex;
-    justify-content: center; */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* width:120rem; */
     padding-top: 4.6%;
-    /* max-width: 800px; */
 
 }
 
@@ -227,11 +216,13 @@
 
 }
 
-.main-svg {}
+/* Extended */
 
-.plot-container {}
-
-/* Home css */
+/* HomePage css && Some css Changing Stles of Graph comonennt (Inbuilt styles!!!!)*/
+/* HomePage css && Some css Changing Stles of Graph comonennt (Inbuilt styles!!!!)*/
+/* HomePage css && Some css Changing Stles of Graph comonennt (Inbuilt styles!!!!)*/
+/* HomePage css && Some css Changing Stles of Graph comonennt (Inbuilt styles!!!!)*/
+/* HomePage css && Some css Changing Stles of Graph comonennt (Inbuilt styles!!!!)*/
 
 .white-area {
     background-color: #F2F2F2;
@@ -250,16 +241,12 @@
     display: flex !important;
     justify-content: center !important;
     padding-right: 0% !important;
-    /* align-items: center;
-    flex-direction: column; */
 }
 
 .col-home-r {
     display: flex !important;
     justify-content: center !important;
     padding-left: 0% !important;
-    /* align-items: center;
-    flex-direction: column; */
 }
 
 .col-inside {
@@ -267,10 +254,6 @@
     font-size: 2rem !important;
 }
 
-.col-inside {
-    /* margin-left: 1% !important; */
-    /* font-size: 2rem !important; */
-}
 
 .col-inside {
     /* font-size: 2rem !important; */
@@ -297,35 +280,40 @@
     font-size: 4.5rem;
 }
 
+/* team-upload section combined */
+/* team-upload section combined */
+/* team-upload section combined */
+/* team-upload section combined */
+/* team-upload section combined */
 
 
-
-
-
-
-
-
-
-/* Content css */
-
-.team {
+.team-upload {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    /* border-radius: 3rem;
-    margin-left: 20%;
-    margin-right: 20%; */
-    padding-top: 4%;
-    padding-bottom: 7%;
-    /* min-height: 25rem; */
-    /* background-color: #947add; */
-    /* font-style: italic; */
-    /* position: relative; */
+    margin-bottom: 3rem;
+
+
 }
 
-.team {
-    background-color: #F2F2F2
+.team-upload hr {
+    height: 38rem;
+    background-color: black;
+    border-radius: 4rem;
+    width: 0.4rem;
 }
+
+
+/* Team page CSS*/
+/* Team page CSS*/
+/* Team page CSS*/
+/* Team page CSS*/
+/* Team page CSS*/
+
+.team {
+    padding: 12rem 10rem 21rem 11rem;
+
+}
+
 
 .team a {
     display: flex;
@@ -375,12 +363,6 @@
     font-size: 2rem;
 }
 
-/* .full-team{
-    background-image: linear-gradient(45deg, #947add, #e85555);
-    min-height: 700px;
-
-
-} */
 
 .white-bg {
     padding-top: 3%;
@@ -390,18 +372,25 @@
 
 
 
-/* card on tem */
+/* card on team page */
+/* card on team page */
+/* card on team page */
+/* card on team page */
+/* card on team page */
+/* card on team page */
 
-
-/* CSS styles */
 .card {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 2rem 5rem 2rem 5rem;
     width: 100%;
     max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Adjust box shadow as needed */
+
 }
 
 .card-text-new {
@@ -426,21 +415,11 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* upload  */
+/* File Upload  */
+/* File Upload  */
+/* File Upload  */
+/* File Upload  */
+/* File Upload  */
 
 
 
@@ -506,88 +485,141 @@
     display: none;
     /* cursor: pointer; */
 
-  }
-  
-  .file-input-image {
-    /* Add your desired styles for the image as an input */
-    /* For example: */
+}
+
+.file-input-image {
     width: 150px;
     height: auto;
-    /* cursor: pointer; */
-    /* border: 1px solid #ccc; */
     border-radius: 5px;
     padding: 5px;
-    /* cursor: pointer; */
-  }
+}
 
-  .custom-file-label{
+.custom-file-label {
     cursor: pointer;
-  }
+}
 
-  
-  .file-input-image:hover {
+
+.file-input-image:hover {
     border-color: #888;
     cursor: pointer;
 
-  }
-
-  
-/* .drop-area input {
-    background-color: #04aa6d5e;
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 2.5rem;
-    display: none;
-} */
-
-/* .drop-area input:hover {
-    background-color: #00513352;
-
-} */
-
-
-@media screen and (max-width: 670px) {
-
-    .containerz {
-        display: flex;
-        flex-direction: column;
-        margin-top: -64rem;
-    }
 }
 
-@media screen and (max-width: 768px) {
-    .card {
-        /* flex-direction: row; */
-        justify-content: space-between;
-        max-width: 600px;
-    }
 
-    .image-container {
-        width: 10rem;
-        height: 10rem;
-        margin-right: 20px;
-    }
+
+.select-container {
+    display: flex;
+    justify-content: center;
 }
+
+
+.slider-card-title {
+    font-size: 2.3rem;
+}
+
+
+.boxi {
+    justify-content: center;
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+    background: red;
+    /* margin-left: 50%; */
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Year Slider  */
+/* Year Slider  */
+/* Year Slider  */
+/* Year Slider  */
+/* Year Slider  */
+
+.slider-select {
+    margin-top: 2.2%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.slider-label {
+    margin-right: 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.MuiSlider-sizeMedium {
+    color: #52104f !important;
+}
+
+.css-eg0mwd-MuiSlider-thumb {
+    color: black !important;
+    /* background-color: #00d744 !important; */
+    background-image: url("../../assets/logo/YOGLABS-logo.png") !important;
+
+
+}
+
+.MuiSlider-rail {
+    opacity: 1 !important;
+}
+
+.year-text {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.slider-label {
+    padding-top: 3%;
+    margin-bottom: -2%;
+    display: flex;
+    justify-content: center;
+}
+
+.MuiPaper-root {
+    background-image: linear-gradient(45deg, #947add, #e85555);
+
+}
+
+.col-home-l {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 9%;
+}
+
+.col-home-r {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 8%;
+    /* align-items: center;
+    flex-direction: column; */
+}
+
+
+
+
+/* Cards on team page! */
+/* Cards on team page! */
+/* Cards on team page! */
+/* Cards on team page! */
+/* Cards on team page! */
 
 .cards-on-team {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
     padding: 20px;
     width: 100%;
-    /* 
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    width: 100%;
-    max-width: 400px; */
 }
 
 .cards-middle {
@@ -595,8 +627,8 @@
 }
 
 .cards__list {
+    display: flex;
     padding-top: 15px;
-    margin-bottom: -25px;
 }
 
 .cards__list li {
@@ -604,10 +636,10 @@
 }
 
 
-/*  */
 .text-xl {
     font-size: 2rem;
     line-height: 1.75rem;
+    margin-top: 2rem;
 }
 
 .tracking-wide {
@@ -620,10 +652,18 @@
 
 
 
+/* Media queries - responsivenes!! */
+/* Media queries - responsivenes!! */
+/* Media queries - responsivenes!! */
+/* Media queries - responsivenes!! */
+/* Media queries - responsivenes!! */
+/* Media queries - responsivenes!! */
+/* Media queries - responsivenes!! */
+/* Media queries - responsivenes!! */
 
 
 
-/* responsiveness */
+
 
 @media (max-width: 1400px) {
     .on-home-bg {
@@ -643,10 +683,25 @@
     }
 
     .bg {
-        /* background-image: linear-gradient(45deg, #b3a1e7, #99f5e9); */
-        /* background-image: linear-gradient(45deg, #947add, #e85555); */
         min-height: 700px;
     }
+}
+
+@media (max-width: 1141px) {
+
+    .team {
+        padding: 10rem 3rem 1rem 3rem;
+
+    }
+
+    .team-upload hr {
+        height: 33rem;
+        background-color: black;
+        border-radius: 4rem;
+        width: 0.4rem;
+    }
+
+
 }
 
 @media (max-width: 991px) {
@@ -664,8 +719,6 @@
     }
 
     .bg {
-        /* background-image: linear-gradient(45deg, #b3a1e7, #99f5e9); */
-        /* background-image: linear-gradient(45deg, #947add, #e85555); */
         min-height: 700px;
     }
 
@@ -701,12 +754,44 @@
         height: 13rem;
         margin-right: 20px;
     }
+
+
+
+    .team-upload hr {
+        height: 30rem;
+        background-color: black;
+        border-radius: 4rem;
+        width: 0.4rem;
+    }
+
+    .team {
+        padding: 10rem 1rem 2rem 1rem;
+
+    }
+
+    .main-text-team {
+        font-size: 1.9rem;
+    }
 }
 
 @media (max-width: 813px) {
     .image-container {
         width: 8rem;
         height: 8rem;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        /* flex-direction: row; */
+        justify-content: space-between;
+        max-width: 600px;
+    }
+
+    .image-container {
+        width: 10rem;
+        height: 10rem;
         margin-right: 20px;
     }
 }
@@ -720,7 +805,6 @@
     }
 
     .card {
-        /* flex-direction: row; */
         justify-content: space-between;
         max-width: 600px;
     }
@@ -739,7 +823,7 @@
 
     .main-text-team {
 
-        font-size: 2.5rem;
+        font-size: 1.6rem;
         font-weight: 500;
 
 
@@ -757,25 +841,6 @@
     }
 
 
-    /* .btn-team{
-        font-style: italic;
-        font-weight: 300;
-        background-color: #0073d7;
-        border-radius: 3rem;
-        cursor: pointer;
-        margin-left: 7rem;
-        margin-right: 7rem;
-        margin-top: 2rem;
-    
-    
-    }
-    .btn-team:hover{
-        font-style: italic;
-        font-weight: 500;
-        background-color: #00d756;
-        border-radius: 3rem;
-        cursor: pointer;
-    } */
 }
 
 @media (max-width: 678px) {
@@ -787,17 +852,25 @@
     }
 }
 
+@media screen and (max-width: 670px) {
+
+    .containerz {
+        display: flex;
+        flex-direction: column;
+        margin-top: -64rem;
+    }
+}
+
+
 @media (max-width: 653px) {
     .no-graph {
         font-size: 2.5rem;
-        /* display: flex; */
         text-align: center;
-        /* justify-content: center; */
     }
 
     .main-text-team {
 
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 500;
 
 
@@ -849,7 +922,6 @@
 
     .no-graph {
         font-size: 2rem;
-        /* display: flex; */
         text-align: center;
         /* justify-content: center; */
     }
@@ -875,6 +947,21 @@
 
     .cPsKcu {
         padding: 3px 19px !important;
+    }
+
+
+    .team {
+        padding: 8rem 0rem 21rem 0rem;
+
+    }
+
+    .main-text-team {
+        font-size: 1.2rem;
+    }
+
+
+    .team-upload hr {
+        height: 23rem;
     }
 
 
@@ -916,14 +1003,32 @@
 
 .fab svg {
     font-size: 2rem;
+    color: black;
 }
 
 @media (max-width: 513px) {
     .main-text-team {
 
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 500;
 
+
+    }
+
+    .team-upload {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+
+    }
+
+    .team-upload hr {
+        display: none;
+    }
+
+    .team {
+        padding: 4rem 0rem 8rem 0rem;
 
     }
 }
@@ -962,64 +1067,18 @@
         margin-top: 100px !important;
     }
 
-    .main-text-team {
-
-        font-size: 1.5rem;
-        font-weight: 400;
 
 
-    }
 
-    /* .bg{
-        min-height: 600px;
-} */
 
 
 }
 
-@media (max-width: 440px) {
-
-    .main-text-team {
-
-        font-size: 1.6rem;
-        font-weight: 400;
-
-
-    }
-
-    .btn-team {
-        font-size: 1rem;
-        font-weight: 500;
-        cursor: pointer;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        /* margin-top: 2rem; */
-
-    }
-
-
-}
 
 @media (max-width: 400px) {
-    .main-text-team {
-
-        font-size: 1.3rem;
-        font-weight: 400;
 
 
-    }
 
-    .btn-team {
-        font-size: 8px;
-        font-weight: 500;
-        cursor: pointer;
-        padding-left: -1rem;
-        padding-right: -1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        /* margin-top: 2rem; */
-
-    }
 
     .on-home-bg {
 
@@ -1028,18 +1087,13 @@
 
     }
 
-    /* .bg{
-        min-height: 600px;
-} */
-
-
 }
 
 @media (max-width: 375px) {
 
     .main-text-team {
 
-        font-size: 9px;
+        font-size: 1.66rem;
         font-weight: 200;
 
 
@@ -1052,10 +1106,6 @@
 
     }
 
-    /* .bg{
-        min-height: 600px;
-} */
-
 
 }
 
@@ -1065,9 +1115,7 @@
         height: 10rem;
         margin-right: 20px;
     }
-}
 
-@media (max-width: 332px) {
 
     .on-home-bg {
 
@@ -1076,22 +1124,15 @@
 
     }
 
-    /* .bg{
-        min-height: 600px;
-} */
+    .main-text-team {
 
+        font-size: 1.4rem;
+        font-weight: 200;
 
-}
-
-/* @media (max-width: 238px) {
-
-    .on-home-bg {
-
-        margin-top: -300%;
-        margin-bottom: 20%;
 
     }
-} */
+
+}
 
 @media (max-width: 288px) {
 
@@ -1110,107 +1151,11 @@
         padding: 2px 10px !important;
     }
 
+    .main-text-team {
 
-}
-
-.select-container {
-    display: flex;
-    justify-content: center;
-}
+        font-size: 1.1rem;
+        font-weight: 200;
 
 
-.slider-card-title {
-    font-size: 2.3rem;
-}
-
-
-.boxi {
-    justify-content: center;
-    display: flex;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 3rem;
-    background: red;
-    /* margin-left: 50%; */
-}
-
-.parent-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-}
-
-
-/* slider
-
- */
-
-.slider-select {
-    margin-top: 2.2%;
-    display: flex;
-    justify-content: center;
-
-}
-
-
-
-.slider-label {
-    margin-right: 2rem;
-    font-size: 1.4rem;
-    font-weight: 400;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-/* slider */
-
-.MuiSlider-sizeMedium {
-    color: #52104f !important;
-}
-
-.css-eg0mwd-MuiSlider-thumb {
-    color: black !important;
-    /* background-color: #00d744 !important; */
-    background-image: url("../../assets/logo/YOGLABS-logo.png") !important;
-
-
-}
-
-.MuiSlider-rail {
-    opacity: 1 !important;
-}
-
-.year-text {
-    font-size: 2.5rem;
-    font-weight: 500;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.slider-label {
-    padding-top: 3%;
-    margin-bottom: -2%;
-    display: flex;
-    justify-content: center;
-}
-
-.MuiPaper-root {
-    background-image: linear-gradient(45deg, #947add, #e85555);
-
-}
-
-.col-home-l {
-    display: flex;
-    justify-content: end;
-    padding-right: 9%;
-    /* align-items: center;
-    flex-direction: column; */
-}
-
-.col-home-r {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 8%;
-    /* align-items: center;
-    flex-direction: column; */
+    }
 }
