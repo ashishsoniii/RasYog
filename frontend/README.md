@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Reasyog Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Project Overview](#project-overview)
+- [Installation](#installation)
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+Reasyog is a powerful web application powered by Yoglabs specifically for Jaipur Modern Store. It offers a comprehensive taxonomic and sales analysis of this departmental store, providing valuable insights into its product inventory and sales trends.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Alt Text](./src//assets//rasyog-dashboard.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features and Benefits
 
-### `npm test`
+- **Taxonomic Analysis:** Reasyog organizes the store's data into various categories, such as product categories, brand categories, and price categories. This classification system allows for efficient data management and enables users to explore and navigate the store's offerings effortlessly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Sales Analysis:** By analyzing the sales data, Reasyog provides valuable insights into product popularity and availability. Store managers can use this information to optimize their product offerings and make informed decisions about inventory management.
 
-### `npm run build`
+- **User-Friendly Interface:** Reasyog presents the results of the taxonomic and sales analysis in a user-friendly interface. The interface is designed to be intuitive and easy to navigate, ensuring that both store managers and customers can access and interpret the data effortlessly.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Enhanced Decision Making:** Whether you are a store manager looking to optimize product offerings or a customer seeking a more efficient shopping experience, Reasyog's taxonomic and sales analysis offers valuable insights to enhance your decision-making process. It helps you make informed choices based on the store's product inventory, sales trends, and customer preferences.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Reasyog is a powerful tool that empowers Jaipur Modern Store to make data-driven decisions and provide an enhanced shopping experience for its customers. With its comprehensive analysis and user-friendly interface, Reasyog is an invaluable asset for optimizing store operations and maximizing customer satisfaction.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+To install and set up the project locally, follow the instructions below:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```shell
+git clone <repository_url>
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install required packages:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```shell
+npm i
+```
 
-## Learn More
+```shell
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the server (Open http://localhost:3000 to view it in your browser) :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```shell
+npm start
+```
 
-### Code Splitting
+4. To build the app for production to the build folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```shell
+npm run build
+```

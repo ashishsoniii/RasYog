@@ -11,6 +11,7 @@ import img8 from "../../../assets/card-img/102_payments.png";
 import DialogGraph from "./DialogGraph";
 
 import "../Content.css"
+
 const Baz = (props) => {
   const [diagOpen, setDiagOpen] = useState(false);
 

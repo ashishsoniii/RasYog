@@ -535,6 +535,17 @@
 }
 
 
+.slider-icon.left {
+    left: 100%;
+    /* rotate: revert; */
+    transform: rotate(180deg);
+}
+.slider-icon.right {
+    left: 100%;
+    /* rotate: revert; */
+    transform: rotate(180deg);
+}
+
 /* Year Slider  */
 /* Year Slider  */
 /* Year Slider  */
