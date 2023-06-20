@@ -9,7 +9,6 @@
 
 Rasyog is a powerful web application powered by Yoglabs specifically for Jaipur Modern Store. It offers a comprehensive taxonomic and sales analysis of this departmental store, providing valuable insights into its product inventory and sales trends.
 
-![Alt Text](./src//assets//rasyog-dashboard.png)
 
 ## Features and Benefits
 
