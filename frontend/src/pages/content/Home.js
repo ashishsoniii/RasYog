@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./Content.css";
 // import Project from "./Project";
 import Buttonz from "./components/Button.js";
-import Button2 from "./components/Button_2.js";
+import Button2 from "./components/Button_2.js"; // name differne tbcz of pascal_case error
 import ReactSlider from "./components/ReactSlider.js";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
-  const [activeState, setActiveState] = useState("Sales Insights");
-  const [activeState2, setActiveState2] = useState("Maps Taxonomic");
+  const [activeState, setActiveState] = useState("Sales Insights"); // section 1 button option!
+  const [activeState2, setActiveState2] = useState("Maps Taxonomic"); // section 2 button option!
   return (
     <>
       <div className="on-home-bg">
@@ -31,6 +31,8 @@ const Home = () => {
       <div className="section1">
         <div className="row white-area">
           <div className="column col-home-l">
+            {/* Section 1 --> three divs --> shows which is tiggered!! */}
+
             {activeState === "Sales Insights" && (
               <div className="Show data">
                 <div className="heading-footer ">
@@ -82,6 +84,7 @@ const Home = () => {
       {/*  */}
       {/*  */}
       {/*  */}
+      {/* Section 2 --> two divs --> shows which is tiggered!! */}
 
       <div
         className="main-home-text white-area tax-data"
@@ -138,7 +141,18 @@ const Home = () => {
         </div>
       </div>
 
+      {/* React slider component (TAken from other's Package)*/}
+      {/* React slider component */}
+      {/* React slider component */}
+      {/* React slider component */}
       <ReactSlider />
+      {/* React slider component */}
+      {/* React slider component */}
+      {/* React slider component */}
+
+      {/* Section 3 (divides into 2 upper ->Upload data files to backend | lower -> show team members) */}
+
+      {/* (left -> uplaod an excel | csv) */}
       <div className="team-upload">
         <section className="team bg-add">
           <div className="main-text-team">Update Data </div>
@@ -147,6 +161,8 @@ const Home = () => {
           </NavLink>
         </section>
         <hr />
+
+        {/* click to see teams!! (Right) */}
         <section className="team">
           <div className="main-text-team">
             Your Partner in Business Analysis{" "}

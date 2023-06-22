@@ -12,6 +12,8 @@ function Footer() {
         <div className="row">
           <div className="column">
             <h2 className="heading-footer">
+              {/* Left div sdection here! */}
+
               {/* <img className="footer-logo" src={logo} alt="" /> */}
               <h2 className="Center">RASYOG</h2>
             </h2>
@@ -21,6 +23,8 @@ function Footer() {
             The results are presented in a user-friendly interface that can{" "}
             <br /> enhance decision-making for store managers and customers.
           </div>
+
+          {/* right div section! */}
           <div className="column right-col">
             <h2>Powered by YogLabs</h2>
             <a className="footer-links-f1" href="mailto:info.ras@yoglabs.ai">

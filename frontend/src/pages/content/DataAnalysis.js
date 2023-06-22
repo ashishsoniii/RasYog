@@ -4,28 +4,37 @@ import Slider from "./components/Slider";
 import SliderReverse from "./components/SliderReverse";
 import Graph from "./Graph";
 
-function DataAnalysis(props) {
-  const [selectedOption, setSelectedOption] = useState("Select your option");
-  const [selectedOptionId, setSelectedOptionId] = useState(0);
+// This page is landing page to display all plots (it takes props(sets from there) from navbar compnent )
+// props
+// props.topic  --> endpont and its short form
+// props.activeTopic  -> gives heading onpage
 
-  const [valueStart, setValueStart] = React.useState(2014);
-  const [valueEnd, setValueEnd] = React.useState(2022);
+function DataAnalysis(props) {
+  const [selectedOption, setSelectedOption] = useState("Select your option"); // option Text of live search component
+  const [selectedOptionId, setSelectedOptionId] = useState(0); // setting up if of selected option!
+
+  const [valueStart, setValueStart] = React.useState(2014); // sets start year in slider (forward slider)
+  const [valueEnd, setValueEnd] = React.useState(2022); // sets send year of slider (reverse Slider)
   // const [selectedCommonYear, setSelectedCommonYear] = useState(valueStart);
 
-  const [displayStart, setDisplayStart] = useState(true);
-  const [displayEnd, setDisplayEnd] = useState(false);
+  const [displayStart, setDisplayStart] = useState(true); // SHOWS 1st slider only
+  const [displayEnd, setDisplayEnd] = useState(false); // Shows 2nd slider tooo
 
+  // slider value updation (start|fordward)
   const handleSliderChange = (newValueStart) => {
     setValueStart(newValueStart);
   };
+  // slider value updation (Reverse | end year)
   const handleSliderEndChange = (newValueEnd) => {
     setValueEnd(newValueEnd);
   };
 
+  //sets plot option seclected from liveSearch Component!
   const handleOptionClick = (item) => {
     setSelectedOption(item.plot);
     setSelectedOptionId(item.id);
   };
+  // As topic change it resets all value (sets it to default setting)
   useEffect(() => {
     setSelectedOptionId(0);
     setDisplayStart(true);
@@ -37,11 +46,12 @@ function DataAnalysis(props) {
 
   return (
     <>
-      {/* <h1> Hraph me hu!</h1>
-      <h1> {selectedOptionId}!</h1> */}
       <div className="on-home-bg">
+        {/* Heading */}
         <div className="main-home-text">{props.activeTopic}</div>
         <div className="main-home-sub-text">
+          {/* Setting its corresponding text to activeTopic via topic!  */}
+          {/* there are 6 routes in total! */}
           {props.topic === "data" ? (
             <>
               <>
@@ -70,12 +80,17 @@ function DataAnalysis(props) {
             "Welcome to our taxonomic data, the secret sauce of our store. With our detailed categorization system, you'll be able to navigate our collection with ease and discover new products that match your preferences. Whether you're a seasoned shopper or a first-time visitor, our taxonomic data makes your shopping experience hassle-free and enjoyable."
           )}{" "}
         </div>
+
+        {/*  A component to select which graph to be displayed! */}
+        {/* This sets up optionID! */}
         <LiveSearch
           topic={props.topic}
           handleOptionClick={handleOptionClick}
           setDisplayStart={setDisplayStart}
           setDisplayEnd={setDisplayEnd}
         />
+
+        {/*  Fordward Sloder Logic HErE! */}
         {!(displayStart === false && displayEnd === false) && (
           <div>
             {!displayStart && (
@@ -88,6 +103,8 @@ function DataAnalysis(props) {
                 </div>
               </>
             )}
+
+            {/* Reverse Slider Here! */}
             {displayEnd && (
               <>
                 {!displayStart && (
@@ -105,6 +122,8 @@ function DataAnalysis(props) {
                   {/* <p>Selected valueStart: {valueEnd}</p> */}
                 </div>
                 <br />
+
+                {/* Display value of SLider!!!!! */}
                 {!displayStart && displayEnd && (
                   <div className="main-home-sub-text year-text">
                     {valueStart} - {valueEnd}
@@ -117,6 +136,9 @@ function DataAnalysis(props) {
             )}
           </div>
         )}
+        {/* MAIN COMPONENT ->  this component shows graph!!!! */}
+        {/* MAIN COMPONENT ->  this component shows graph!!!! */}
+        {/* Reminder -> Topic sets endpoint of routes! */}
         <Graph
           selectedOption={selectedOption}
           selectedOptionId={selectedOptionId}

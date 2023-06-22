@@ -1,22 +1,22 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import logo from "../../assets/logo/logo-no-background.png";
-// import logo from "../../assets/logo/rasyog-logo-yog.png";
 import logo from "../../assets/logo/YOGLABS-logo.png";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export const UserContext = React.createContext();
-
 const Navbar = (props) => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
+  const [showMediaIcons, setShowMediaIcons] = useState(false); // Menu Hamburger menu
   const menuRef = useRef();
 
+  //show menu!
   const handleMenuClick = () => {
     setShowMediaIcons(!showMediaIcons);
   };
 
+  //  handleClickOutside function-> handles clicks that occur outside of a specific element(menu).
+  // menuRef.current -> menuRef has a current value (existance in DOM)
+  // !menuRef.current.contains(event.target) --> it checks if the clicked element is outside the menu.
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
       setShowMediaIcons(false);
@@ -24,9 +24,10 @@ const Navbar = (props) => {
   };
 
   useEffect(() => {
+    // Add event listener to handle clicks outside the menu
     document.addEventListener("mousedown", handleClickOutside);
-
     return () => {
+      // Clean up event listener on unmount
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
@@ -98,8 +99,7 @@ const Navbar = (props) => {
                 Sales Distribution
               </NavLink>
             </li>
-
-            {/* new routes */}
+            {/* future Route! -> Taxoniomic */}
             {/* <li>
               <NavLink
                 className="nav-link nav-link-ltr"
@@ -129,6 +129,7 @@ const Navbar = (props) => {
                 Maps Taxonomic
               </NavLink>
             </li>
+            {/* Future Route -> Data Taxonomic! */}
             {/* <li>
               <NavLink
                 className="nav-link nav-link-ltr"
