@@ -4,6 +4,7 @@
 
 - [Project Overview](#project-overview)
 - [Installation](#installation)
+- [Description of Components](#description-of-components)
 
 ## Project Overview
 
@@ -55,7 +56,7 @@ npm start
 npm run build
 ```
 
-## Components Description
+## Description of Components
 
 - [src/pages](https://github.com/ashishsoniii/RasYog/tree/main/frontend/src/pages) - navbar | Content(All inside pages) | footer <br>
   --Footer.js - Footer component which contains copyright information <br>
@@ -78,5 +79,4 @@ npm run build
 --UploadFiles.js - Uploades analysis file from frontend to backend Home!!
 --Content.css - CSS of all components are here
 
-________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-
+---
