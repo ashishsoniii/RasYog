@@ -1,9 +1,13 @@
+// Slider is component on DataAnalysis Page! 
+// It sets value to set of start year
+
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import thumbImage from "./sunbust.png";
 
 
+// 2014 - 2022 years option!
 const marks = [
   {
     value: 2014,
@@ -57,8 +61,8 @@ export default function DiscreteSlider({ onChange }) {
       cursor: "pointer",
     },
   };
-  
-  const handleChange = (event, value) => {
+  // update
+  const handleChange = ( value) => {
     onChange(value);
   };
 

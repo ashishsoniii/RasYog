@@ -1,18 +1,20 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 
+//Component to select Selection of graph (sets up Selected option ID / Name)
+
 function LiveSearch(props) {
   const [plotName, setPlotName] = useState([]);
   // eslint-disable-next-line
   const [displayOption, setDisplayOption] = useState(false);
-  // const [displayStart, setDisplayStart] = useState(false);
-  // const [displayEnd, setDisplayEnd] = useState(false);
 
+  // show | hide option 
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("Select your option");
+  const [selectedOption, setSelectedOption] = useState("Select your option");   
   // eslint-disable-next-line
-  const [selectedOptionId, setSelectedOptionId] = useState(0);
+  const [selectedOptionId, setSelectedOptionId] = useState(0);  // 
 
+  // used to handle outside click!
   const selectMenuRef = useRef(null);
 
   const handleOptionClick = (item) => {
@@ -25,6 +27,7 @@ function LiveSearch(props) {
     setIsOpen(false);
   };
 
+  // resets options to default
   useEffect(() => {
     setSelectedOptionId(0);
     setSelectedOption("Select your option");
@@ -35,9 +38,11 @@ function LiveSearch(props) {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://yoglabs.pythonanywhere.com/store?id=${props.topic}`,
+          `https://yoglabs.pythonanywhere.com/store?id=${props.topic}`,     
           { cancelToken: source.token }
         );
+        // localhost 
+
         // const response = await axios.get(
         //   `http://127.0.0.1:5000/store?id=${props.topic}`,
         // );
@@ -45,11 +50,6 @@ function LiveSearch(props) {
         setPlotName(plot_name);
         setDisplayOption(display_option);
       } catch (error) {
-        if (axios.isCancel(error)) {
-          // Handle cancelation
-        } else {
-          // console.error(error);
-        }
       }
     };
     fetchData();
@@ -61,6 +61,7 @@ function LiveSearch(props) {
   }, [props.topic]);
 
   useEffect(() => {
+    // Logic fir click outside to close menu!
     const handleClickOutside = (event) => {
       if (
         selectMenuRef.current &&
@@ -81,7 +82,7 @@ function LiveSearch(props) {
     <div>
       <div className="select-container">
         <div
-          className={`select-menu ${isOpen ? "active" : ""}`}
+          className={`select-menu ${isOpen ? "active" : ""}`}    // open check active means -> yes show it!
           ref={selectMenuRef}
         >
           <button className="select-btn" onClick={() => setIsOpen(!isOpen)}>
@@ -89,6 +90,7 @@ function LiveSearch(props) {
             <i className="bx bx-chevron-down"></i>
           </button>
           <ul className="options">
+          {/* show plot option available from backend!!! */}
             {plotName.map((item) => (
               <li
                 className="option"
@@ -97,6 +99,7 @@ function LiveSearch(props) {
                   handleOptionClick(item);
                 }}
               >
+              {/* shows names of tile - plots  */}
                 <span className="option-color"></span>
                 <span className="option-text">{item.plot}</span>
               </li>

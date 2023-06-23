@@ -1,6 +1,9 @@
+// Team Page to show detail of Developers
+// Team -> UserCards (card)
+
 import React from "react";
 import "../Content.css";
-import UserCards2 from "./UserCards2";
+import UserCards2 from "./UserCards";
 import { GrLinkedinOption } from "react-icons/gr";
 import { GrGithub } from "react-icons/gr";
 import { CgWebsite } from "react-icons/cg";
@@ -12,6 +15,7 @@ import tanya from "../../../assets/developer/tanya.jpeg";
 import anjali from "../../../assets/developer/anjali.jpeg";
 
 function Team() {
+  // data goes into UserCards as props!
   const cardsData1 = [
     {
       content: "Ashish Soni",
@@ -91,36 +95,11 @@ function Team() {
       },
     },
   ];
-  // {
-  //   content: "Anjali Yadav",
-  //   post: "Data Science Engineer",
-  //   imageSrc: anjali,
-  //   link1: {
-  //     url: "https://www.linkedin.com/in/anjali-yadav23/",
-  //     icon: <GrLinkedinOption />,
-  //   },
-  //   link2: {
-  //     url: "https://github.com/Anjali2303/",
-  //     icon: <GrGithub />,
-  //   },
-  // },
-  // // {
-  //   content: "Sameer Saifi",
-  //   post: "Sameer Saifi",
-  //   imageSrc: sameer,
-  //   link1: {
-  //     url: "https://www.linkedin.com/in/sameer-saifi-88297420b/",
-  //     icon: <GrLinkedinOption />,
-  //   },
-  //   link2: {
-  //     url: "https://github.com/Sameersaifi1512/",
-  //     icon: <GrGithub />,
-  //   },
-  // },
 
   return (
     <div className="full-team">
       <div className="on-home-bg ">
+        {/* Heading! */}
         <div className="main-home-text"> About Us! </div>
         <div className="main-home-sub-text main-home-sub-text_about-US">
           Welcome to RASYOG, featured by YOGLABS. Our team has conducted a
@@ -133,6 +112,7 @@ function Team() {
           Contact us to learn more!
         </div>
       </div>
+      {/* Cards 2 section 3:2 */}
       <div className="white-bg">
         <div className="main-home-text"> Meet The Team! </div>
         <div className="cards-on-team">

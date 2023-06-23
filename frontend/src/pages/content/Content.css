@@ -536,12 +536,13 @@
 
 
 .slider-icon.left {
-    left: 100%;
+    left: 100% !important;
     /* rotate: revert; */
     transform: rotate(180deg);
 }
+
 .slider-icon.right {
-    left: 100%;
+    left: 0%;
     /* rotate: revert; */
     transform: rotate(180deg);
 }

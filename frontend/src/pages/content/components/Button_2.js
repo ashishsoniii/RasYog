@@ -1,3 +1,5 @@
+// This componwnt -> section-3 Maps Taxonomic | Data Taxonomic! button
+
 import React, { useState } from "react";
 import styled from "styled-components";
 const Button = styled.button`

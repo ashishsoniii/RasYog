@@ -8,7 +8,8 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { AiOutlineClose } from "react-icons/ai";
 
-
+// Component on home-screen (Click to see graph in full page (material UI used))
+// Used Template from website!
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -31,17 +32,8 @@ export default function DialogGraph(props) {
         onClose={handleClose}
         TransitionComponent={Transition}
       >
-        {/* <DialogTitle>Optional sizes</DialogTitle> */}
         <DialogContent>
-          {/* <AppBar
-            sx={{
-              position: "sticky",
-              top: 0,
-              backgroundImage: "url( #947add, #e85555)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          > */}{" "}
+
           {/* <Toolbar> */}
           <IconButton
             sx={{ position: "sticky", top: 0 }}
@@ -51,6 +43,7 @@ export default function DialogGraph(props) {
             aria-label="close"
             fontSize="large"
           >
+          {/* close Icon X */}
             <AiOutlineClose />
           </IconButton>
           <Typography
@@ -58,37 +51,11 @@ export default function DialogGraph(props) {
             variant="h3"
             component="div"
           >
+          {/* Description of plot - title */}
             {props.description}
           </Typography>
           <DialogContent>
-            {/* <LiveSearch
-              topic={props.topic}
-              setselectedOptionId={props.setselectedOptionId}
-              // handleOptionClick={props.selectedOptionId}
-              // setDisplayStart={props.valueStart}
-              // setDisplayEnd={props.valueEnd}
-            /> */}
-
-            {/* {dialogLoad && (
-              <div className="parent-container">
-                <motion.div
-                  className="boxi"
-                  animate={{
-                    scale: [1, 1.6, 1.6, 1, 1],
-                    rotate: [0, 0, 180, 180, 0],
-                    borderRadius: ["10%", "10%", "50%", "50%", "10%"],
-                  }}
-                  transition={{
-                    duration: 2,
-                    ease: "easeInOut",
-                    times: [0, 0.2, 0.5, 0.8, 1],
-                    repeat: Infinity,
-                    repeatDelay: 0,
-                  }}
-                ></motion.div>
-              </div>
-            )} */}
-
+            {/* To display graph use graph component! */}
             <Graph
               selectedOptionId={props.selectedOptionId}
               valueStart={props.valueStart}

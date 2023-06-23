@@ -1,3 +1,4 @@
+// Reverse Slider -> design changes of  slider.js
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
@@ -42,7 +43,7 @@ const marks = [
 ];
 
 export default function DiscreteSlider({ onChange, valueStart }) {
-  const handleChange = (event, value) => {
+  const handleChange = ( value) => {
     onChange(value);
   };
 

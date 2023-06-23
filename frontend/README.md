@@ -9,6 +9,7 @@
 
 Rasyog is a powerful web application powered by Yoglabs specifically for Jaipur Modern Store. It offers a comprehensive taxonomic and sales analysis of this departmental store, providing valuable insights into its product inventory and sales trends.
 
+![Alt Text](./src//assets//rasyog-dashboard.png)
 
 ## Features and Benefits
 
@@ -53,3 +54,29 @@ npm start
 ```shell
 npm run build
 ```
+
+## Components Description
+
+- [src/pages](https://github.com/ashishsoniii/RasYog/tree/main/frontend/src/pages) - navbar | Content(All inside pages) | footer <br>
+  --Footer.js - Footer component which contains copyright information <br>
+  --Navbar.js - Navbar component that has navbar :) <br><br>
+- [src/pages/content](https://github.com/ashishsoniii/RasYog/tree/main/frontend/src/pages/content) <br>
+  --Components <br>
+  --Button.js | Button_2.js - Displays 3 : 2 Button respectively <br>
+  --userCard.js - Contains Card Component with Image & Text inside card <br>
+  --Team.js - Team Page here <br>
+  --Slider.js | SliderReverse.js - Slider Component to select year <br>
+  --ReactSlider.js - Helper Function for card.js <br>
+  --LiveSearch.js - Comonent to select graph from options (Axios API call)<br>
+  --DialogGraph.js - Displays GRaph in Dialog box (Full Screen)<br>
+  --graph.js - Important component to display graph! (Main Comonent | helper To dialogGrpah / sliders | Axios Call)<br>
+
+<br><br>
+--Home.js - Landing Page of Rasyog! <br>
+--DataAnalysis.js - Containes all stuff related to display graph on page (/dataAnalysis) <br>
+--Graph.js - Axios API call to backend to fetch data and display on frontend! <br>
+--UploadFiles.js - Uploades analysis file from frontend to backend Home!!
+--Content.css - CSS of all components are here
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+

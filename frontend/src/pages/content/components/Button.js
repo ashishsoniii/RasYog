@@ -1,3 +1,5 @@
+// This componwnt -> section-2 Sales Insight | Popularity & margin | Sales Distribution -  button
+
 import React, { useState } from "react";
 import styled from "styled-components";
 const Button = styled.button`

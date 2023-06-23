@@ -1,3 +1,5 @@
+// This is Slider componemt on home screen
+
 import React, { useState } from "react";
 import ReactCardSlider from "react-card-slider-component";
 import img1 from "../../../assets/card-img/Barplot.png";
@@ -10,9 +12,11 @@ import img7 from "../../../assets/card-img/105_maps_t.png";
 import img8 from "../../../assets/card-img/102_payments.png";
 import DialogGraph from "./DialogGraph";
 
-import "../Content.css"
+import "../Content.css";
 
 const Baz = (props) => {
+  //  props all that graph component required!
+
   const [diagOpen, setDiagOpen] = useState(false);
 
   const [selectedOptionId, setselectedOptionId] = useState(false);
@@ -21,11 +25,9 @@ const Baz = (props) => {
   const [topic, settopic] = useState("");
   const [description, setdescription] = useState("Hi");
 
-  // selectedOptionId={2}
-  // valueStart={2014}
-  // valueEnd={2017}
-  // topic={"data"}
-
+  // Slides -> it has data to display -> required by graph component!
+  // overview!->
+  // React Sider -> Dialog Graph -> Graph!!!!!!!!!
   const slides = [
     {
       image: img1,
@@ -102,7 +104,9 @@ const Baz = (props) => {
         setvalueStart(2014);
         setvalueEnd(2022);
         setDiagOpen(true);
-        setdescription("Tree Maps : Popularity Analysis for Products upto Brand Level");
+        setdescription(
+          "Tree Maps : Popularity Analysis for Products upto Brand Level"
+        );
       },
     },
     {
