@@ -15,6 +15,7 @@ import tanya from "../../../assets/developer/tanya.jpeg";
 import anjali from "../../../assets/developer/anjali.jpeg";
 
 function Team() {
+  
   // data goes into UserCards as props!
   const cardsData1 = [
     {

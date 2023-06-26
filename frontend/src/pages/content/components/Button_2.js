@@ -35,12 +35,13 @@ const ButtonGroup = styled.div`
   display: block;
   justify-content: centre;
 `;
-const types = ["Maps Taxonomic", "Data Taxonomic"];
+const types = ["Maps Taxonomic", "Data Taxonomic"];  //name of buttons
 
 function ToggleGroup(props) {
   const [active, setActive] = useState(types[0]);
   return (
     <ButtonGroup className="column col-home-r ">
+    {/* map to map btn with names --> types */}
       {types.map((type) => (
         <ButtonToggle
           className="row col-inside"

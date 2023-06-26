@@ -29,12 +29,13 @@ const ButtonGroup = styled.div`
   display: block;
   justify-content: centre;
 `;
-const types = ["Sales Insights", "Popularity & Margin", "Sales Distribution"];
+const types = ["Sales Insights", "Popularity & Margin", "Sales Distribution"]; // button names i.e. 3 btn to diplay!
 
 function ToggleGroup(props) {
   const [active, setActive] = useState(types[0]);
   return (
     <ButtonGroup className="column col-home-l ">
+      {/* types cpntain 3 btn name so mapping it and creating map! */}
       {types.map((type) => (
         <ButtonToggle
           className="row col-inside"

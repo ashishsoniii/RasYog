@@ -15,6 +15,8 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
+
+// Function starts here
 export default function DialogGraph(props) {
   const handleClose = () => {
     props.setDiagOpen(false);
@@ -22,10 +24,8 @@ export default function DialogGraph(props) {
   const [dialogLoad, setdialogLoad] = React.useState(true);
 
   return (
-    <React.Fragment>
-      {/* <Button variant="outlined" onClick={handleClickOpen}>
-        Open dialog
-      </Button> */}
+    // <> another way <>
+    <React.Fragment>  
       <Dialog
         fullScreen
         open={props.diagOpen}

@@ -3,44 +3,33 @@ import axios from "axios";
 import excel from "../../assets/excel.png";
 
 function UploadFile() {
-  const [file1, setFile1] = useState(null);
-  const [file2, setFile2] = useState(null);
+  const [file1, setFile1] = useState(null); // file1 stored here
+  const [file2, setFile2] = useState(null); // file1 stored here
+
+  //stores File Name!
   const [selectedFileName1, setSelectedFileName1] = useState(
     "Select an Excel File"
   );
+  //stores File Name!
   const [selectedFileName2, setSelectedFileName2] = useState(
     "Select an Excel File"
   );
 
+  //updating fileName | File Upload
   const handleFile1Change = (event) => {
     const selectedFile = event.target.files[0];
     setFile1(selectedFile);
-    setSelectedFileName1(
-      selectedFile ? selectedFile.name : "Select an Excel File"
-    );
+    setSelectedFileName1(selectedFile.name);
   };
 
+  //updating fileName | File Upload
   const handleFile2Change = (event) => {
     const selectedFile = event.target.files[0];
     setFile2(selectedFile);
-    setSelectedFileName2(
-      selectedFile ? selectedFile.name : "Select an Excel File"
-    );
+    setSelectedFileName2(selectedFile.name);
   };
 
-  const handleDragOver = (event) => {
-    event.preventDefault();
-  };
-
-  const handleDrop = (event, fileHandler) => {
-    event.preventDefault();
-    const droppedFile =
-      event.dataTransfer?.files[0] || event.target?.files?.[0];
-    if (droppedFile) {
-      fileHandler(droppedFile);
-    }
-  };
-
+  // This function handles file upload feature with backend i.e. it make's post request to backend API
   const handleUpload = () => {
     if (file1 && file2) {
       const formData = new FormData();
@@ -50,11 +39,12 @@ function UploadFile() {
       axios
         .post("http://127.0.0.1:5000/upload", formData)
         .then((response) => {
-          console.log(response.data);
+          // console.log(response.data);
           window.alert("File uploaded successfully!");
-          window.location.reload();
+          // window.location.reload();
         })
         .catch((error) => {
+          window.alert("File Not Uploaded!");
           console.error(error);
         });
     } else {
@@ -65,11 +55,8 @@ function UploadFile() {
   return (
     <>
       <div className="containerz">
-        <div
-          className="drop-area"
-          onDragOver={handleDragOver}
-          onDrop={(event) => handleDrop(event, handleFile1Change)}
-        >
+        {/* Code for Input of 1st file is here | it accepts -> .xlsx, .xls, .csv  */}
+        <div className="drop-area">
           <p>Upload store_data_v2:</p>
           <label className="custom-file-label">
             <img
@@ -89,11 +76,8 @@ function UploadFile() {
           </label>
         </div>
 
-        <div
-          className="drop-area"
-          onDragOver={handleDragOver}
-          onDrop={(event) => handleDrop(event, handleFile2Change)}
-        >
+        {/* Code for Input of 2nd file is here | it accepts -> .xlsx, .xls, .csv  */}
+        <div className="drop-area">
           <p>Upload total_data_file:</p>
           <label className="custom-file-label">
             <img
